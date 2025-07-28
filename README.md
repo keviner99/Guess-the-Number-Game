@@ -18,7 +18,7 @@ The purpose of writing this software was to demonstrate my understanding of basi
 
 7. Data structure from Java Collection Framework (such as ArrayList, TreeSet, or HashMap)
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=g-jSAzKftSE)
 
 # Development Environment
 
