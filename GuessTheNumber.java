@@ -5,9 +5,12 @@ import java.util.Scanner; // Import Scanner for user input
 
 // Define the main class for the game
 public class GuessTheNumber {
-    private static final int MAX_ATTEMPTS = 10; // Max number of guesses allowed // Constant for maximum number of allowed guesses
-    private static final int NUMBER_RANGE = 100; // Random number range (1–100) // Constant for the upper bound of the random number range
-    private static final String FILE_NAME = "game_results.txt"; // File to store game results // Constant filename to save game results
+    // Max number of guesses allowed 
+    private static final int MAX_ATTEMPTS = 10; // Constant for maximum number of allowed guesses
+    // Random number range (1–100)
+    private static final int NUMBER_RANGE = 100; // Constant for the upper bound of the random number range
+    // File to store game results 
+    private static final String FILE_NAME = "game_results.txt"; // Constant filename to save game results
 
     // Main method: entry point of the program
     public static void main(String[] args) {
@@ -24,7 +27,7 @@ public class GuessTheNumber {
 
             // Create Random object to generate the secret number
             Random rand = new Random();
-            int targetNumber = rand.nextInt(NUMBER_RANGE) + 1; // random number from 1–100 // Constant for the upper bound of the random number range
+            int targetNumber = rand.nextInt(NUMBER_RANGE) + 1; // random number from 1–100 
             ArrayList<Integer> guesses = new ArrayList<>(); // List to store all of the user's guesses
 
             boolean hasWon = false;
@@ -74,8 +77,9 @@ public class GuessTheNumber {
     }
 
     /**
-     * Reads previous game results from the file and displays them to the player.
-     */
+     *Reads previous game results from the file and displays them to the player.
+     **/
+
     private static void readGameResultsFromFile() {
         System.out.println("Previous Game Results:");
 
@@ -101,7 +105,8 @@ public class GuessTheNumber {
 
     /**
      * Saves the result of the current game to the file.
-     */
+     **/
+    
     private static void saveResultToFile(boolean hasWon, int attempts, ArrayList<Integer> guesses) {
         // List to store all of the user's guesses
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {

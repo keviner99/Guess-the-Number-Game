@@ -1,8 +1,8 @@
 # Overview
 
-I wrote a Guess the Number Game in Java. Develop a number guessing game where the computer generates a random number, and the player has to guess it within a limited number of attempts.
+The software I developed is a "Guess the Number" game written in Java. The computer randomly generates a number between 1 and 100, and the player has a limited number of attempts (10 by default) to guess it correctly. After each guess, the program provides feedback on whether the guess was too high or too low. At the end of the game, the result is saved to a file for later review.
 
-The purpose of writing this software was to demonstrate key concepts of the Java programming language such as:
+The purpose of writing this software was to demonstrate my understanding of basic Java programming concepts such as:
 
 1. Variables
 
@@ -22,9 +22,13 @@ The purpose of writing this software was to demonstrate key concepts of the Java
 
 # Development Environment
 
-VS Code
+Visual Studio Code 
 
 Java
+
+java.util.Scanner, java.util.Random, java.util.ArrayList
+
+package java.io
 
 # Useful Websites
 
@@ -34,6 +38,5 @@ Java
 
 # Future Work
 
-- Item 1
-- Item 2
-- Item 3
+- Improve the input validation to handle edge cases
+- Add a difficulty selection menu to change the number of attempts or range.
