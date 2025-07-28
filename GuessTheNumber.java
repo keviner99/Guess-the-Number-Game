@@ -1,7 +1,7 @@
 import java.io.*; // Import classes for file input/output
 import java.util.ArrayList; // Import ArrayList to store player guesses
-import java.util.Random; // Import Random for number generation
-import java.util.Scanner; // Import Scanner for user input
+import java.util.Random; // Import Random for number generation // https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html
+import java.util.Scanner; // Import Scanner for user input // https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html
 
 // Define the main class for the game
 public class GuessTheNumber {
@@ -106,14 +106,14 @@ public class GuessTheNumber {
     /**
      * Saves the result of the current game to the file.
      **/
-    
+
     private static void saveResultToFile(boolean hasWon, int attempts, ArrayList<Integer> guesses) {
         // List to store all of the user's guesses
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
             // Constant filename to save game results
             String result = hasWon
-                ? "Win in " + attempts + " attempts. Guesses: " + guesses
-                : "Loss after " + MAX_ATTEMPTS + " attempts. Guesses: " + guesses; // Constant for maximum number of allowed guesses
+                    ? "Win in " + attempts + " attempts. Guesses: " + guesses
+                    : "Loss after " + MAX_ATTEMPTS + " attempts. Guesses: " + guesses; // Constant for maximum number of allowed guesses
 
             writer.write(result);
             writer.newLine(); // move to the next line for future results
@@ -123,3 +123,6 @@ public class GuessTheNumber {
         }
     }
 }
+
+// I read through this documentation as a guide to understand the basics for the game 
+//https://medium.com/@AlexanderObregon/making-a-number-guessing-game-with-java-logic-727204d916ae
