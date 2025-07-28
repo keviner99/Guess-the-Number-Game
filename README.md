@@ -18,8 +18,6 @@ The purpose of writing this software was to demonstrate key concepts of the Java
 
 7. Data structure from Java Collection Framework (such as ArrayList, TreeSet, or HashMap)
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
@@ -31,7 +29,8 @@ Java
 # Useful Websites
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Java)
-- [Web Site Name](http://url.link.goes.here)
+- [Java](https://dev.java/learn/getting-started/)
+- [W3 Schools](https://www.w3schools.com/java/)
 
 # Future Work
 

@@ -1,0 +1,4 @@
+Win in 6 attempts. Guesses: [50, 80, 90, 85, 88, 89]
+Win in 5 attempts. Guesses: [50, 40, 20, 80, 90]
+Win in 5 attempts. Guesses: [20, 10, 5, 7, 6]
+Win in 7 attempts. Guesses: [50, 80, 70, 60, 55, 53, 52]
